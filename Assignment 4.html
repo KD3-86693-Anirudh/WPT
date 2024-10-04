@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+   
+</head>
+<body style="margin-top: 10%; margin-left: 30%;">
+
+    <h1 style="margin-left: 75px; margin-bottom: 50px; text-decoration: underline;">Calculator</h1>
+
+    Enter Number 1 <input type="text" style="border: none; border: 2px solid black; margin-left: 30px; padding: 5px;" id="no1"> <br>  <br>
+    Enter Number 2 <input type="text" style="border: none; border: 2px solid black; margin-left: 30px; padding: 5px;" id="no2"> <br>  <br>
+    Result <input type="text" style="border: none; border: 2px solid black; margin-left: 92px; padding: 5px;" id="res" value=""> <br>  <br>
+ <br>
+
+<input type="button" value="Addition" style="background-color: white; padding: 10px 15px; margin-right: 5px;" id="add" onclick="Addition()">
+<input type="button" value="Subtraction" style="background-color: white; padding: 10px 15px; margin-right: 5px;" id="subtract" onclick="Subtraction()">
+<input type="button" value="Multiplication" style="background-color: white; padding: 10px 15px; margin-right: 5px;" id="multiply" onclick="Multiplication()">
+<input type="button" value="Division" style="background-color: white; padding: 10px 15px; margin-right: 5px;" id="divide" onclick="Division()">
+
+<script>
+
+// var a = document.getElementById("add");+
+// var b = document.getElementById("subtract");
+// var c = document.getElementById("multiply");
+// var d = document.getElementById("divide");
+
+function Addition(){
+
+    var a = document.getElementById("no1");
+    var b = document.getElementById("no2");
+
+    var inp1=parseInt(a.value);
+    var inp2=parseInt(b.value);
+        
+    var Result=inp1+inp2;
+    document.getElementById("res").value=Result;
+
+}
+
+function Subtraction(){
+    var a = document.getElementById("no1");
+    var b = document.getElementById("no2");
+
+    var inp1=parseInt(a.value);
+    var inp2=parseInt(b.value);
+        
+    var Result=inp1-inp2;
+    document.getElementById("res").value=Result;
+}
+
+function Multiplication(){
+    var a = document.getElementById("no1");
+    var b = document.getElementById("no2");
+
+    var inp1=parseInt(a.value);
+    var inp2=parseInt(b.value);
+        
+    var Result=inp1*inp2;
+    document.getElementById("res").value=Result;
+}
+
+function Division(){
+    var a = document.getElementById("no1");
+    var b = document.getElementById("no2");
+
+    var inp1=parseInt(a.value);
+    var inp2=parseInt(b.value);
+        
+    var Result=inp1/inp2;
+    document.getElementById("res").value=Result;
+}
+
+</script>
+    
+</body>
+</html>

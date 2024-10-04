@@ -1,0 +1,75 @@
+<html>
+<head>
+  
+    <title>Document</title>
+  <center><h2 style="margin-top: 100px;">Registration Form</h2></center>  
+</head>
+<body>
+     
+
+
+<div style="display: flex; justify-content: center; margin-top: 100px;">
+
+    <video src="https://www.w3schools.com/html/mov_bbb.mp4" height="300px" width="300px" controls style="margin-right: 50px; margin-bottom: 200px;"></video> 
+
+    <div> 
+        Name <input type="text"> <br> <br>
+        BirthDate <input type="date"> <br> <br>
+        Email <input type="email"> <br> <br>
+        Password <input type="password"> <br> <br>
+        
+Address <label for="state">State:</label>
+        <select id="state" name="state">
+            <option value="maharashtra">Maharashtra</option>
+            <option value="gujarat">Gujarat</option>
+             <option value="karnataka">Karnataka</option>
+            <option value="tamil-nadu">Tamil Nadu</option>
+            <!-- Add more states as needed -->
+        </select>
+    
+
+    
+        <label for="district">District:</label>
+        <select id="district" name="district">
+            <option value="mumbai">Mumbai</option>
+            <option value="pune">Pune</option>
+            <option value="nashik">Nashik</option>
+            <option value="nagpur">Nagpur</option>
+            <!-- Districts would normally change based on the state -->
+        </select>
+    
+    
+        <label for="city">City:</label>
+        <select id="city" name="city">
+            <option value="thane">Thane</option>
+            <option value="dadar">Dadar</option>
+            <option value="bandra">Bandra</option>
+            <option value="vile-parle">Vile Parle</option>
+             <!-- Cities would normally change based on the district -->
+        </select>
+
+        <br> <br>
+
+        Gender <input type="radio" name="B" id="" value="Male"> <input type="radio" name="B" id="" value="Female"> <br> <br> 
+
+        Upload Photo :  <input type="file" id="photo" name="photo" accept="image/*"> <br> <br>
+    
+        Select Course  <select name="Select Course" id="Select Course">
+            <option value="english">English</option>
+            <option value="Maths">Maths</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Science">Science</option>
+        </select>
+<br><br>
+      
+        <input type="button" value="Register" style="margin-right: 90px; width: 90px;"> <input type="button" value="Clear" style="width: 90px;">
+   
+
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
