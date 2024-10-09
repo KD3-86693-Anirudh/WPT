@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's wear</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel = "jquery" href="jquery-3.7.1.min.js">
+    <link rel="booty js" href="bootstrap.min.js" >
+
+
+
+    <style>
+        footer {
+            font-size: 14px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: #007bff; /* Ensure the background color is dark enough */
+            color: white; /* Ensure text color is white for contrast */
+        }
+
+        footer a {
+            color: #ffffff !important; /* Ensure all links are clearly visible */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .input-group input {
+            max-width: 300px; /* Adjust the email input width */
+        }
+
+        .payment-icons img {
+            max-width: 40px; /* Make payment icons a bit smaller */
+        }
+
+        .newsletter .input-group {
+            max-width: 400px; /* Adjust the newsletter section width */
+        }
+    </style>
+
+
+
+    
+    <script>
+        // This function will trigger the opening of the select options
+        window.onload = function() {
+          document.getElementById("mySelect").click(); // Simulate a click on the select
+        };
+      </script>
+</head>
+<body>
+    
+    <div class="container" >
+
+
+        <nav>
+            <div class="container-fluid" style=" margin: 10px;">
+                <div class="" style=" display: flex; justify-content: space-around;"  >
+                    <div  class="col-md-3" style=" height: 40px;"> <h3 style="margin-top: 5px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;"><img src="mdblogo.png" alt="" style="width: 90px;"></h3>   </div>
+                    <div class="col-md-3" style=" height: 40px;"><input type="search"  placeholder="Search here" style="border-radius: 5px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; height: 100%; width: 70%; border: 1px solid grey;"> <input type="button" class="btn btn-primary" value="Search" style="margin: -4px; height: 100%; margin-top: -7px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;"></div>
+                    <div class="col-md-3" style=" height: 40px; display: flex; justify-content: space-evenly;">
+                        <input type="button" class="btn" value="Sign In" style="height: 100%;">
+                        <input type="button" class="btn" value="Watchlist" style="height: 100%;">
+                        <input type="button" class="btn" value="MyCart" style="height: 100%;">
+                    </div>
+                    <!-- <div class="col-md-3" style="background-color: orange; height: 40px;">Column 3</div> -->
+                  </div>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid jumbotron" style="background-color: #337ab7;">
+            <div ><h2 style="margin: 0px; color: white;">Men's wear</h2><h4 style="margin: 0px;"><span style="color: rgb(88, 81, 81);">Home > Library > Data</span></h4></div>
+        </div>
+
+
+
+
+
+<!-- bluecontainer -->
+
+        <div style="width: 100%;  background: white; display: flex;  border: 2px solid white; height: 95%" class="container-fluid   " >
+
+
+            <div style="background-color: white; height: 1000px; display: flex; border: 2px solid grey;" class="col-md-3" >
+
+
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Related Items -->
+                        <h6 class="fw-bold">Related Items</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home items</a></li>
+                            <li><a href="#">Books, Magazines</a></li>
+                            <li><a href="#">Men's clothing</a></li>
+                            <li><a href="#">Interiors items</a></li>
+                            <li><a href="#">Underwears</a></li>
+                            <li><a href="#">Shoes for men</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul> <br><br>
+    
+                        <!-- Brands -->
+                        <h6 class="fw-bold mt-4">Brands</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="brand1" checked>
+                            <label class="form-check-label" for="brand1">Mercedes <span class="text-muted">(120)</span></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="brand2" checked>
+                            <label class="form-check-label" for="brand2">Toyota <span class="text-muted">(15)</span></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="brand3" checked>
+                            <label class="form-check-label" for="brand3">Mitsubishi <span class="text-muted">(35)</span></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="brand4" checked>
+                            <label class="form-check-label" for="brand4">Nissan <span class="text-muted">(89)</span></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="brand5">
+                            <label class="form-check-label" for="brand5">Honda <span class="text-muted">(30)</span></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="brand6">
+                            <label class="form-check-label" for="brand6">Suzuki <span class="text-muted">(30)</span></label>
+                        </div> <br><br>
+    
+                        <!-- Price Slider -->
+                        <h6 class="fw-bold mt-4">Price</h6>
+                        <div>
+                            <label for="priceRange" class="form-label">Price Range</label>
+                            <input type="range" class="form-range" id="priceRange">
+                            <div class="d-flex justify-content-between">
+                                <span>Min: $0</span>
+                                <span>Max: $1000</span>
+                            </div>
+                            <button class="btn btn-primary mt-2 w-100">Apply</button>
+                        </div> <br><br>
+    
+                        <!-- Size -->
+                        <h6 class="fw-bold mt-4">Size</h6>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-outline-secondary">XS</button>
+                            <button type="button" class="btn btn-outline-secondary">SM</button>
+                            <button type="button" class="btn btn-outline-secondary">LG</button>
+                            <button type="button" class="btn btn-outline-secondary">XXL</button>
+                        </div> <br><br>
+    
+                        <!-- Ratings -->
+                        <!-- <h6 class="fw-bold mt-4">Ratings</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="rating5" checked>
+                            <label class="form-check-label" for="rating5">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="rating4" checked>
+                            <label class="form-check-label" for="rating4">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="rating3">
+                            <label class="form-check-label" for="rating3">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="rating2">
+                            <label class="form-check-label" for="rating2">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="rating1">
+                            <label class="form-check-label" for="rating1">
+                                <span class="fa fa-star checked"></span>
+                            </label>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div style=" background-color: white; height: 85%; " class="col-md-10">
+                <div class="col-md-4" style="background-color: white; height: 30px; width: 95%; border: 2px solid grey;">
+                    <span style="font-size: medium;">32 item found </span>
+                    <select name="match" id="best match" style="margin-left: 35%; border-radius: 5px;height: 90%; width: 150px; border: 2px solid grey;">
+                        
+                        <option value="option1" selected>Best Match</option>
+                        <option value="option1">option1</option>
+                        <option value="option1">option1</option>
+                        <option value="option1">option1</option>
+                        <option value="option1">option1</option>
+                    </select>
+
+                    <input type="button" value="-" style="border-radius: 5px; width: 25px; background-color: white; margin-left: 10%;">
+                    <input type="button" value="X" style="border-radius: 5px; width: 25px; background-color: white;">
+                    <hr style="">
+                </div>
+
+
+
+                <div style="background-color: white; height: 80% ; width: 100%;   margin-top: 2%;  display: flex; flex-direction: column; justify-content:space-between">
+
+                <div style="height: 20%; background-color: white; display: flex; border: 2px solid grey; margin-bottom: 15px; margin-top: 15px; width: 95%;" >
+                    <div><img src="bag.png" alt="" style="height: 85%; width: 150px; margin: 5%; margin-top: 9%; margin-left: 5%;"></div>
+                    <div style="height: 100%; width: 50%; background-color:white;"> <h3 style="">Rucksack Backpack Jeans</h3>
+                    
+                        4.5 (star rating) <br/>
+                        154 orders<br/>
+                        Short description about the product goes here, for ex its features. Lorem ipsum dolor sit amet with hapti you enter into any new area of science, you almost lorem ipsum is great text consectetur adipisicing
+                    </div>
+                    <div style="height: 100%; ">
+
+                        <h2>$34,50</h2>
+                        <span style="color: green; font-size: medium; font-style: bold;"> free shoping </span><br>
+                        <input type="button" class="btn btn-primary" value="BUY THIS"><input class="btn" type="button" value="@"> 
+                    </div>
+                </div>
+                <div style="height: 20%; background-color: white; display: flex; border: 2px solid grey; margin-bottom: 15px;width: 95%;" >
+                    <div><img src="pant.png" alt="" style="height: 85%; width: 150px; margin: 5%; margin-top: 9%; margin-left: 5%;"></div>
+                    <div style="height: 100%; width: 50%; background-color:white;"> <h3 style="">Men's Denim Jeans Shorts</h3>
+                    
+                        4.5 (star rating) <br/>
+                        154 orders<br/>
+                        Re-engineered Digital Crown with hapti Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua tempor incididunt ut labore et dolore magna                     </div>
+                    <div style="height: 100%; ">
+
+                        <h2>$34,50</h2>
+                        <span style="color: green; font-size: medium; font-style: bold;"> free shoping </span><br>
+                        <input type="button" class="btn btn-primary" value="BUY THIS"><input class="btn" type="button" value="@"> 
+                    </div>
+                </div>
+                <div style="height: 20%; background-color: white; display: flex; border: 2px solid grey; margin-bottom: 15px; width: 95%;" >
+                    <div><img src="tshirt.png" alt="" style="height: 85%; width: 150px; margin: 5%; margin-top: 9%; margin-left: 5%;"></div>
+                    <div style="height: 100%; width: 50%; background-color:white;"> <h3 style="">T-shirt for Men Blue Cotton </h3>
+                    
+                        3.5 (star rating) <br/>
+                        914 orders<br/>
+                        Short description about the product goes here, for ex its features. Lorem ipsum dolor sit amet with hapti you enter into any new area of science, you almost lorem ipsum is great text consectetur adipisicing                    </div>
+                    <div style="height: 100%; ">
+
+                        <h2>$99,50</h2>
+                        <span style="color: green; font-size: medium; font-style: bold;"> free shoping </span><br>
+                        <input type="button" class="btn btn-primary" value="BUY THIS"><input class="btn" type="button" value="@"> 
+                    </div>
+                </div>
+                <div style="height: 20%; background-color: white; display: flex; border: 2px solid grey; margin-bottom: 15px; width: 95%;" >
+                    <div><img src="jacket.png" alt="" style="height: 85%; width: 150px; margin: 5%; margin-top: 9%; margin-left: 5%;"></div>
+                    <div style="height: 100%; width: 50%; background-color:white;"> <h3 style="">Rucksack Backpack Jeans</h3>
+                    
+                        4.5 (star rating) <br/>
+                        154 orders<br/>
+                        Short description about the product goes here, for ex its features. Lorem ipsum dolor sit amet with hapti you enter into any new area of science, you almost lorem ipsum is great text consectetur adipisicing
+                    </div>
+                    <div style="height: 100%; ">
+
+                        <h2>$140</h2>
+                        <span style="color: green; font-size: medium; font-style: bold;"> free shoping </span><br>
+                        <input type="button" class="btn btn-primary" value="BUY THIS"><input class="btn" type="button" value="@"> 
+                    </div>
+                </div>
+                <div style="height: 20%; background-color: white; display: flex; border: 2px solid grey; margin-bottom: -100px; width: 95%;" >
+                    <div><img src="image.png" alt="" style="height: 85%; width: 150px; margin: 5%; margin-top: 9%; margin-left: 5%;"></div>
+                    <div style="height: 100%; width: 50%; background-color:white;"> <h3 style="">Rucksack Backpack Jeans</h3>
+                    
+                        4.5 (star rating) <br/>
+                        154 orders<br/>
+                        Short description about the product goes here, for ex its features. Lorem ipsum dolor sit amet with hapti you enter into any new area of science, you almost lorem ipsum is great text consectetur adipisicing
+                    </div>
+                    <div style="height: 100%; ">
+
+                        <h2>$99.50</h2>
+                        <span style="color: green; font-size: medium; font-style: bold;"> free shoping </span><br>
+                        <input type="button" class="btn btn-primary" value="BUY THIS"><input class="btn" type="button" value="@"> 
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+               
+    </div> 
+
+
+
+ <!-- Footer starts -->
+<footer class="footer bg-primary text-white" style="margin-top: 150px; border-radius: 5px;" >
+    <div class="container"  >
+        <div class="row">
+            <!-- MDB and Copyright -->
+            <div class="col-md-3">
+                <h5>MDB</h5>
+                <p>© 2023 Copyright: MDBootstrap.com</p>
+            </div>
+            
+            <!-- Store Links -->
+            <div class="col-md-3">
+                <h5>STORE</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Find store</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+            
+            <!-- Information Links -->
+            <div class="col-md-3">
+                <h5>INFORMATION</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Money refund</a></li>
+                    <li><a href="#">Shipping info</a></li>
+                    <li><a href="#">Refunds</a></li>
+                </ul>
+            </div>
+            
+            <!-- Support Links -->
+            <div class="col-md-3">
+                <h5>SUPPORT</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Documents</a></li>
+                    <li><a href="#">Account restore</a></li>
+                    <li><a href="#">My orders</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Newsletter and Payment Options -->
+        <div class="row mt-4">
+            <div class="col-md-6 newsletter">
+                <h5>NEWSLETTER</h5>
+                <p>Stay in touch with latest updates about our products and offers</p>
+                <div class="input-group">
+                    <!-- <input type="email" class="form-control" placeholder="Email">
+                    <button class="btn btn-light" type="button">JOIN</button> -->
+                </div>
+            </div>
+            <div class="col-md-6 text-end payment-icons">
+                <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa" class="me-2"/>
+                <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="MasterCard" class="me-2"/>
+                <img src="https://img.icons8.com/color/48/000000/paypal.png" alt="PayPal" class="me-2"/>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer ends -->  
+ 
+<div style="margin-top: 200px;"></div>
+
+   
+    
+</body>
+</html>
